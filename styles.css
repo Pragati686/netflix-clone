@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-image: url("https://i1.wp.com/bigtechquestion.com/wp-content/uploads/2020/05/netflix.jpg?fit=1200%2C675&ssl=1");
+    background-size: cover;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav img {
+    width: 80px;
+}
+
+.user {
+    width: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+main {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.movie-row {
+    padding: 40px 0;
+}
+
+.movie-row h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Add your movie poster styling here */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Add the CSS styles from the previous example */
+
+/* Add styling for movie posters */
+.movie-posters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.movie-posters img {
+    width: 150px;
+    margin-right: 10px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.movie-posters img:hover {
+    border-color: #e50914;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .movie-posters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-posters img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
